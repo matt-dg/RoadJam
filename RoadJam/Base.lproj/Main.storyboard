@@ -47,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-506" y="-78"/>
+            <point key="canvasLocation" x="-591" y="-18"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bGn-qd-q5G">
@@ -64,20 +64,21 @@
             </objects>
             <point key="canvasLocation" x="255" y="241"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="bem-sE-eyu">
+        <!--Item 2-->
+        <scene sceneID="Bsk-hx-yOh">
             <objects>
-                <viewController id="coa-Lb-Dhr" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KiP-zG-9zy">
+                <viewController id="Dm4-lA-aYB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cI2-UB-uV5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="x16-rf-Kqy"/>
+                        <viewLayoutGuide key="safeArea" id="iXD-Ws-4n8"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="YpH-Cx-cq5"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ciC-2y-ZIh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZg-S6-qED" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="933" y="-62"/>
+            <point key="canvasLocation" x="-1417" y="-406"/>
         </scene>
     </scenes>
 </document>
