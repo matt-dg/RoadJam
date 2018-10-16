@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D90E50F403A8E3785BB45E6 /* Pods_RoadJam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3776C59F99B5C1B3D3F017C /* Pods_RoadJam.framework */; };
 		B92E86D02174C33C00A79017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E86CF2174C33C00A79017 /* AppDelegate.swift */; };
 		B92E86D22174C33C00A79017 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E86D12174C33C00A79017 /* ViewController.swift */; };
 		B92E86D52174C33C00A79017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92E86D32174C33C00A79017 /* Main.storyboard */; };
 		B92E86D72174C33D00A79017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B92E86D62174C33D00A79017 /* Assets.xcassets */; };
 		B92E86DA2174C33D00A79017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92E86D82174C33D00A79017 /* LaunchScreen.storyboard */; };
 		B92E86E52174C33D00A79017 /* RoadJamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E86E42174C33D00A79017 /* RoadJamTests.swift */; };
-		FC4B5D93217530180023D7F7 /* Podfile in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4B5D92217530180023D7F7 /* Podfile */; };
-		FC4B5D95217530E10023D7F7 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC4B5D94217530E10023D7F7 /* ExternalAccessory.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4B5D95217530E10023D7F7 /* ExternalAccessory.framework in Frameworks */,
-				FC4B5D93217530180023D7F7 /* Podfile in Frameworks */,
-				6D90E50F403A8E3785BB45E6 /* Pods_RoadJam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
