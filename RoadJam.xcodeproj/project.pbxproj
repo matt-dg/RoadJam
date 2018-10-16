@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57AEEAC52176348A00F55759 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AEEAC42176348A00F55759 /* EventTableViewCell.swift */; };
 		B92E86D02174C33C00A79017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E86CF2174C33C00A79017 /* AppDelegate.swift */; };
 		B92E86D22174C33C00A79017 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E86D12174C33C00A79017 /* ViewController.swift */; };
 		B92E86D52174C33C00A79017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92E86D32174C33C00A79017 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57AEEAC42176348A00F55759 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		5B57999EC5A26E47DB70C65A /* Pods-RoadJam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadJam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadJam/Pods-RoadJam.debug.xcconfig"; sourceTree = "<group>"; };
 		A3776C59F99B5C1B3D3F017C /* Pods_RoadJam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadJam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92E86CC2174C33C00A79017 /* RoadJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,7 @@
 				B92E86CF2174C33C00A79017 /* AppDelegate.swift */,
 				B92E86D12174C33C00A79017 /* ViewController.swift */,
 				B92E86D32174C33C00A79017 /* Main.storyboard */,
+				57AEEAC42176348A00F55759 /* EventTableViewCell.swift */,
 				B92E86D62174C33D00A79017 /* Assets.xcassets */,
 				B92E86D82174C33D00A79017 /* LaunchScreen.storyboard */,
 				B92E86DB2174C33D00A79017 /* Info.plist */,
@@ -287,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AEEAC52176348A00F55759 /* EventTableViewCell.swift in Sources */,
 				B92E86D22174C33C00A79017 /* ViewController.swift in Sources */,
 				B92E86D02174C33C00A79017 /* AppDelegate.swift in Sources */,
 			);
