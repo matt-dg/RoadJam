@@ -98,14 +98,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My upcoming events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVh-Xz-BCG" customClass="upcomingEvents">
-                                <rect key="frame" x="29" y="238" width="159" height="21"/>
+                                <rect key="frame" x="29" y="144" width="159" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My past events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGR-J2-5k2" customClass="pastEvents">
-                                <rect key="frame" x="29" y="353" width="149" height="21"/>
+                                <rect key="frame" x="34" y="378" width="149" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -118,6 +118,169 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f1t-N1-eDo" customClass="TableView">
+                                <rect key="frame" x="29" y="173" width="329" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="ocZ-6N-D5G">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="EdV-n6-C20">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Music-event" translatesAutoresizingMaskIntoConstraints="NO" id="nEf-cK-wuZ" customClass="event1Pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfg-Sg-xjV" customClass="event1Label">
+                                                    <rect key="frame" x="6" y="152" width="93" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="Jqr-Cp-qCK"/>
+                                                    </constraints>
+                                                    <string key="text">Arena Disco
+10 KM
+23 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="nEf-cK-wuZ" secondAttribute="trailing" id="2Vp-M0-zKn"/>
+                                            <constraint firstAttribute="bottom" secondItem="zfg-Sg-xjV" secondAttribute="bottom" id="Aqh-B8-BmU"/>
+                                            <constraint firstItem="nEf-cK-wuZ" firstAttribute="leading" secondItem="EdV-n6-C20" secondAttribute="leading" id="MVJ-HG-wfU"/>
+                                            <constraint firstItem="zfg-Sg-xjV" firstAttribute="leading" secondItem="EdV-n6-C20" secondAttribute="leadingMargin" constant="-2" id="epc-Gd-NFc"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="zfg-Sg-xjV" secondAttribute="trailing" constant="43" id="f8t-R2-Jod"/>
+                                            <constraint firstItem="nEf-cK-wuZ" firstAttribute="top" secondItem="EdV-n6-C20" secondAttribute="top" id="nyd-Qk-XhR"/>
+                                            <constraint firstItem="zfg-Sg-xjV" firstAttribute="top" secondItem="nEf-cK-wuZ" secondAttribute="bottom" constant="2" id="smS-5K-EFi"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="waM-Ef-cdq">
+                                        <rect key="frame" x="179" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V C DanceMusicFests ADE Johan Vivie" translatesAutoresizingMaskIntoConstraints="NO" id="Ehi-Ps-LqJ" customClass="event2Pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYU-hm-CaL" customClass="event3Label">
+                                                    <rect key="frame" x="9" y="152" width="64" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="h6H-hO-Pzl"/>
+                                                    </constraints>
+                                                    <string key="text">Eric Clapton
+12 KM
+30 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ehi-Ps-LqJ" secondAttribute="trailing" id="8Qf-fp-73a"/>
+                                            <constraint firstItem="FYU-hm-CaL" firstAttribute="trailing" secondItem="Ehi-Ps-LqJ" secondAttribute="trailing" constant="-77" id="OKu-al-tOX"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FYU-hm-CaL" secondAttribute="trailing" symbolic="YES" id="RqL-Jm-nmx"/>
+                                            <constraint firstAttribute="bottom" secondItem="FYU-hm-CaL" secondAttribute="bottom" id="UWd-Ez-7j6"/>
+                                            <constraint firstItem="Ehi-Ps-LqJ" firstAttribute="leading" secondItem="waM-Ef-cdq" secondAttribute="leading" id="VjP-Ap-Lpp"/>
+                                            <constraint firstItem="Ehi-Ps-LqJ" firstAttribute="top" secondItem="waM-Ef-cdq" secondAttribute="top" id="gqb-Rm-JPg"/>
+                                            <constraint firstItem="FYU-hm-CaL" firstAttribute="leading" secondItem="waM-Ef-cdq" secondAttribute="leading" constant="9" id="wsc-iK-Ay3"/>
+                                            <constraint firstItem="FYU-hm-CaL" firstAttribute="top" secondItem="Ehi-Ps-LqJ" secondAttribute="bottom" constant="2" id="yhQ-PR-dXp"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9a5-zU-u4l" customClass="TableView">
+                                <rect key="frame" x="29" y="405" width="329" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="z9P-DA-m9c">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Jg-VV-UkN">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="musicevent" translatesAutoresizingMaskIntoConstraints="NO" id="CqV-PZ-DWJ" customClass="event3pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="150" id="AUG-kJ-wDm"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mqB-P9-q08" customClass="event3Label">
+                                                    <rect key="frame" x="6" y="152" width="90" height="48"/>
+                                                    <string key="text">Salsiccia Festival
+15 KM
+12 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="mqB-P9-q08" secondAttribute="bottom" id="V9X-x5-paw"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="mqB-P9-q08" secondAttribute="trailing" constant="46" id="W9K-ne-8B9"/>
+                                            <constraint firstItem="CqV-PZ-DWJ" firstAttribute="top" secondItem="7Jg-VV-UkN" secondAttribute="top" id="hQj-MG-n9N"/>
+                                            <constraint firstAttribute="trailing" secondItem="CqV-PZ-DWJ" secondAttribute="trailing" id="rQ9-IY-Y42"/>
+                                            <constraint firstItem="mqB-P9-q08" firstAttribute="leading" secondItem="7Jg-VV-UkN" secondAttribute="leadingMargin" constant="-2" id="tCg-eC-SjY"/>
+                                            <constraint firstItem="CqV-PZ-DWJ" firstAttribute="leading" secondItem="7Jg-VV-UkN" secondAttribute="leading" id="u1K-vg-QPn"/>
+                                            <constraint firstItem="mqB-P9-q08" firstAttribute="top" secondItem="CqV-PZ-DWJ" secondAttribute="bottom" constant="2" id="x1c-VV-ldg"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eTl-31-Pk0">
+                                        <rect key="frame" x="179" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roskilde-festival-top-summer-music-festivals" translatesAutoresizingMaskIntoConstraints="NO" id="gaz-gm-lop" customClass="event4Pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxJ-sY-OKx" customClass="event1Label">
+                                                    <rect key="frame" x="2" y="153" width="128" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="47" id="4bI-36-dvB"/>
+                                                    </constraints>
+                                                    <string key="text">Arena Fregrea Concert
+20 KM
+23 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="MxJ-sY-OKx" secondAttribute="trailing" constant="12" id="5iS-zR-Gzl"/>
+                                            <constraint firstItem="MxJ-sY-OKx" firstAttribute="top" secondItem="gaz-gm-lop" secondAttribute="bottom" constant="3" id="Djv-gB-OOV"/>
+                                            <constraint firstItem="gaz-gm-lop" firstAttribute="leading" secondItem="eTl-31-Pk0" secondAttribute="leading" id="G2A-8Q-w6F"/>
+                                            <constraint firstAttribute="trailing" secondItem="gaz-gm-lop" secondAttribute="trailing" id="IAN-Tu-rSg"/>
+                                            <constraint firstItem="gaz-gm-lop" firstAttribute="top" secondItem="eTl-31-Pk0" secondAttribute="top" id="SrY-ly-nOU"/>
+                                            <constraint firstItem="MxJ-sY-OKx" firstAttribute="leading" secondItem="eTl-31-Pk0" secondAttribute="leadingMargin" constant="-6" id="c06-3Z-wmr"/>
+                                            <constraint firstAttribute="bottom" secondItem="MxJ-sY-OKx" secondAttribute="bottom" id="dV9-jD-lGF"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ff5-dG-zbE"/>
@@ -291,11 +454,6 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NPV-6q-UDI">
-                                <rect key="frame" x="23" y="82" width="336" height="56"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -416,22 +574,125 @@ Tuesday  6 November
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1wP-yc-TbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.8" y="-410.64467766116945"/>
+            <point key="canvasLocation" x="2434" y="-412"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="b2i-4n-5Hl">
+        <!--Seach Page-->
+        <scene sceneID="acg-w2-fhf">
             <objects>
-                <viewController id="OV3-eT-eJc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ofb-1t-fkZ">
+                <viewController id="AYo-yY-FoI" customClass="SeachPage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rav-Bt-Woe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmQ-Zz-Fnj" customClass="eventTitle">
+                                <rect key="frame" x="155" y="49" width="65" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-hB-W63">
+                                <rect key="frame" x="16" y="97" width="328" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="FnA-1d-aQd" customClass="TableView">
+                                <rect key="frame" x="23" y="326" width="329" height="202"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="n5p-Kn-abg">
+                                    <size key="itemSize" width="150" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Ipv-GZ-G8m">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Music-event" translatesAutoresizingMaskIntoConstraints="NO" id="c0l-xV-zv3" customClass="event1Pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-CJ-VP5" customClass="event1Label">
+                                                    <rect key="frame" x="6" y="152" width="93" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="1MS-Qr-XTT"/>
+                                                    </constraints>
+                                                    <string key="text">Arena Disco
+10 KM
+23 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="o6G-CJ-VP5" firstAttribute="top" secondItem="c0l-xV-zv3" secondAttribute="bottom" constant="2" id="4Yd-s8-skf"/>
+                                            <constraint firstAttribute="trailing" secondItem="c0l-xV-zv3" secondAttribute="trailing" id="96q-z3-DL2"/>
+                                            <constraint firstItem="c0l-xV-zv3" firstAttribute="top" secondItem="Ipv-GZ-G8m" secondAttribute="top" id="MVR-qL-EP1"/>
+                                            <constraint firstAttribute="bottom" secondItem="o6G-CJ-VP5" secondAttribute="bottom" id="Sxe-qE-ssk"/>
+                                            <constraint firstItem="c0l-xV-zv3" firstAttribute="leading" secondItem="Ipv-GZ-G8m" secondAttribute="leading" id="mWi-QC-loZ"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="o6G-CJ-VP5" secondAttribute="trailing" constant="43" id="o4i-81-fml"/>
+                                            <constraint firstItem="o6G-CJ-VP5" firstAttribute="leading" secondItem="Ipv-GZ-G8m" secondAttribute="leadingMargin" constant="-2" id="tPf-XE-dpQ"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="yr8-f5-jkL">
+                                        <rect key="frame" x="179" y="0.0" width="150" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="V C DanceMusicFests ADE Johan Vivie" translatesAutoresizingMaskIntoConstraints="NO" id="JQ6-FV-54t" customClass="event2Pic">
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JH-U1-vIn" customClass="event3Label">
+                                                    <rect key="frame" x="9" y="152" width="64" height="48"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="48" id="iX2-76-ioo"/>
+                                                    </constraints>
+                                                    <string key="text">Eric Clapton
+12 KM
+30 $</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="4JH-U1-vIn" firstAttribute="top" secondItem="JQ6-FV-54t" secondAttribute="bottom" constant="2" id="1Ex-xT-DhR"/>
+                                            <constraint firstItem="JQ6-FV-54t" firstAttribute="top" secondItem="yr8-f5-jkL" secondAttribute="top" id="2aH-cZ-ZrI"/>
+                                            <constraint firstItem="4JH-U1-vIn" firstAttribute="leading" secondItem="yr8-f5-jkL" secondAttribute="leading" constant="9" id="9KB-gY-Zq0"/>
+                                            <constraint firstItem="4JH-U1-vIn" firstAttribute="trailing" secondItem="JQ6-FV-54t" secondAttribute="trailing" constant="-77" id="AQW-MB-BPa"/>
+                                            <constraint firstAttribute="bottom" secondItem="4JH-U1-vIn" secondAttribute="bottom" id="Miz-cm-zGQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="JQ6-FV-54t" secondAttribute="trailing" id="OQ4-Aa-sol"/>
+                                            <constraint firstItem="JQ6-FV-54t" firstAttribute="leading" secondItem="yr8-f5-jkL" secondAttribute="leading" id="ofm-sr-UtB"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4JH-U1-vIn" secondAttribute="trailing" symbolic="YES" id="rE6-1m-Y0E"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xB2-K6-pt1" customClass="eventTitle">
+                                <rect key="frame" x="145" y="272" width="71" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="1DD-Am-21l"/>
+                        <viewLayoutGuide key="safeArea" id="him-4O-bKJ"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TUh-cx-FsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGt-y6-OZ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2422" y="-409"/>
+            <point key="canvasLocation" x="1788" y="-412"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="z44-0f-ZFZ">
