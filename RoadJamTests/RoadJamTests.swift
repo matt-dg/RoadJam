@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import RoadJam
+@testable import RoadJamTest
 
 class RoadJamTests: XCTestCase {
 
