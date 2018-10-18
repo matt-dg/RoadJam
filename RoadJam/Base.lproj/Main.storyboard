@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoadJam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="AllEvent">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zi5-pW-vHx" customClass="distanceLabel">
-                                <rect key="frame" x="16" y="73" width="116" height="23"/>
+                                <rect key="frame" x="20" y="73" width="116" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="h6l-yn-4G6"/>
                                 </constraints>
@@ -27,51 +27,50 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="TRm-Jh-hcE" customClass="distanceSlider">
-                                <rect key="frame" x="148" y="70" width="213" height="30"/>
+                                <rect key="frame" x="152" y="70" width="244" height="30"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAR-Os-yty" customClass="minLabel">
-                                <rect key="frame" x="120" y="106" width="239" height="20"/>
+                                <rect key="frame" x="120" y="106" width="274" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBr-o8-KyN" customClass="maxLabel">
-                                <rect key="frame" x="308" y="105" width="51" height="21"/>
+                                <rect key="frame" x="308" y="105" width="86" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAKE IT FOR EVENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBV-e2-8b2" customClass="shakeLabel">
-                                <rect key="frame" x="44" y="581" width="298" height="37"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radar-vector-sonar-5" translatesAutoresizingMaskIntoConstraints="NO" id="wzG-NJ-tjX" customClass="shakePic">
-                                <rect key="frame" x="71" y="255" width="239" height="224"/>
+                                <rect key="frame" x="71" y="255" width="278" height="224"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="224" id="dIE-P4-5lV"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SHAKE IT FOR EVENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBV-e2-8b2" customClass="shakeLabel">
+                                <rect key="frame" x="58" y="650" width="298" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aBV-e2-8b2" secondAttribute="trailing" constant="33" id="39Z-Ni-hIy"/>
                             <constraint firstItem="wzG-NJ-tjX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="71" id="5Pj-po-zMc"/>
                             <constraint firstItem="TRm-Jh-hcE" firstAttribute="leading" secondItem="Zi5-pW-vHx" secondAttribute="trailing" constant="18" id="7Vt-O9-eCA"/>
+                            <constraint firstItem="aBV-e2-8b2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8yy-U5-roQ"/>
                             <constraint firstItem="LAR-Os-yty" firstAttribute="baseline" secondItem="FBr-o8-KyN" secondAttribute="baseline" id="HkQ-fU-zZQ"/>
                             <constraint firstItem="TRm-Jh-hcE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Nzt-hC-Ook"/>
                             <constraint firstItem="LAR-Os-yty" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="UY4-je-giP"/>
                             <constraint firstItem="Zi5-pW-vHx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="UyD-HT-MzT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wzG-NJ-tjX" secondAttribute="trailing" constant="65" id="XYS-QR-peV"/>
                             <constraint firstItem="TRm-Jh-hcE" firstAttribute="trailing" secondItem="LAR-Os-yty" secondAttribute="trailing" id="Xmq-9r-Mk4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aBV-e2-8b2" secondAttribute="bottom" constant="49" id="hWs-nc-3gF"/>
                             <constraint firstItem="FBr-o8-KyN" firstAttribute="trailing" secondItem="LAR-Os-yty" secondAttribute="trailing" id="lXT-j8-Ws6"/>
                             <constraint firstItem="Zi5-pW-vHx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="mzi-Lb-3Em"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aBV-e2-8b2" secondAttribute="bottom" constant="49" id="pWv-zq-kpi"/>
                             <constraint firstItem="TRm-Jh-hcE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uMb-Ro-CAN"/>
                             <constraint firstItem="wzG-NJ-tjX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="255" id="uo3-CG-Vni"/>
                             <constraint firstItem="FBr-o8-KyN" firstAttribute="top" secondItem="TRm-Jh-hcE" secondAttribute="bottom" constant="6" id="wlN-GN-dkw"/>
-                            <constraint firstItem="aBV-e2-8b2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="x1Y-kP-FEc"/>
                             <constraint firstItem="FBr-o8-KyN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="308" id="xEG-bD-RT7"/>
                             <constraint firstItem="Zi5-pW-vHx" firstAttribute="centerY" secondItem="TRm-Jh-hcE" secondAttribute="centerY" id="zcl-Dv-uk6"/>
                         </constraints>
@@ -87,7 +86,7 @@
             <objects>
                 <viewController id="7aA-hS-xav" customClass="myEvent" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S3B-40-HFO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Event" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISi-db-tlf" customClass="myeventTitle">
@@ -296,11 +295,11 @@
             <objects>
                 <viewController id="iY9-os-GhM" customClass="UpcomingEvent" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oh9-qo-n4c" customClass="UpcomingEvents">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upcoming Events" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUp-vh-noA" customClass="eventTitle">
-                                <rect key="frame" x="97" y="89" width="181" height="27"/>
+                                <rect key="frame" x="116.66666666666669" y="89" width="181" height="27"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -484,7 +483,7 @@
             <objects>
                 <viewController id="oWd-Oo-m2y" customClass="eventPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pjn-wh-GBK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Arena Disco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-Dd-2y2" customClass="eventTitle">
@@ -603,7 +602,7 @@ Tuesday  6 November
             <objects>
                 <viewController id="wnx-AR-dSg" customClass="joinCarPoolPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4NV-uI-2dL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="To Arena Disco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xA-ZN-tEm" customClass="eventTitleOfJoiningCarPool">
@@ -631,7 +630,7 @@ Tuesday  6 November
                                                 <rect key="frame" x="0.0" y="0.0" width="303" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OCF-K1-UkH" id="BFp-Er-tkI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sports-car" translatesAutoresizingMaskIntoConstraints="NO" id="Iru-ZM-yZc" customClass="carImage">
@@ -662,7 +661,7 @@ SGlnaHdheSB0byBoZWxsISEbCmJ5IExlb25hcmRvIEVzcG9zaXRvCjEyIGttIGZyb20geW91A
                                                 <rect key="frame" x="0.0" y="100" width="303" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sys-lb-afL" id="bKj-Zl-1k8">
-                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sports-car" translatesAutoresizingMaskIntoConstraints="NO" id="4Nb-47-4Pa" customClass="carImage">
@@ -690,7 +689,7 @@ by Mickey Mouse
                                                 <rect key="frame" x="0.0" y="200" width="303" height="100"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gb7-o7-vIJ" id="d2a-LD-FsI">
-                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="303" height="99.666666666666671"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sports-car" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-zv-GZj" customClass="carImage">
@@ -732,7 +731,7 @@ by Buron Mars
             <objects>
                 <viewController id="yam-aD-tQn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F7G-rP-QHA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highway to hell!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyk-92-scd" customClass="eventTitleOfJoiningCarPool">
@@ -845,7 +844,7 @@ by Buron Mars
             <objects>
                 <viewController id="MXm-z9-k9f" customClass="organiseCarPoolPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I2Z-yU-kE8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Music-event" translatesAutoresizingMaskIntoConstraints="NO" id="jZ2-Tx-oNr" customClass="event1FullPic">
@@ -887,7 +886,7 @@ R2l2ZSBhIG5hbWUgb2YgeW91ciB0cmlwGyE
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="C5O-rw-Z1s" customClass="meetingTimePicker">
-                                <rect key="frame" x="192" y="355" width="152" height="111"/>
+                                <rect key="frame" x="192" y="355" width="191" height="111"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <date key="date" timeIntervalSinceReferenceDate="561473922.60076106">
                                     <!--2018-10-17 12:58:42 +0000-->
@@ -932,7 +931,7 @@ R2l2ZSBhIG5hbWUgb2YgeW91ciB0cmlwGyE
             <objects>
                 <viewController id="AYo-yY-FoI" customClass="SeachPage" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rav-Bt-Woe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seach" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmQ-Zz-Fnj" customClass="eventTitle">
@@ -943,7 +942,7 @@ R2l2ZSBhIG5hbWUgb2YgeW91ciB0cmlwGyE
                                 <nil key="highlightedColor"/>
                             </label>
                             <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dGB-hB-W63">
-                                <rect key="frame" x="16" y="97" width="328" height="56"/>
+                                <rect key="frame" x="16" y="97" width="367" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
@@ -1072,7 +1071,7 @@ R2l2ZSBhIG5hbWUgb2YgeW91ciB0cmlwGyE
                     <tabBarItem key="tabBarItem" title="Item 1" id="Qm0-qK-k9F"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BIC-w3-KOi">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1088,13 +1087,13 @@ R2l2ZSBhIG5hbWUgb2YgeW91ciB0cmlwGyE
     <resources>
         <image name="Music-event" width="980" height="653"/>
         <image name="V C DanceMusicFests ADE Johan Vivie" width="600" height="338"/>
-        <image name="avatar" width="128" height="128"/>
-        <image name="clock-circular-outline" width="128" height="128"/>
-        <image name="maps-and-flags" width="128" height="128"/>
-        <image name="multiple-users-silhouette" width="128" height="128"/>
+        <image name="avatar" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="clock-circular-outline" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="maps-and-flags" width="102.40000152587891" height="102.40000152587891"/>
+        <image name="multiple-users-silhouette" width="102.40000152587891" height="102.40000152587891"/>
         <image name="musicevent" width="1170" height="500"/>
         <image name="radar-vector-sonar-5" width="512" height="512"/>
         <image name="roskilde-festival-top-summer-music-festivals" width="1190" height="793"/>
-        <image name="sports-car" width="128" height="128"/>
+        <image name="sports-car" width="102.40000152587891" height="102.40000152587891"/>
     </resources>
 </document>
